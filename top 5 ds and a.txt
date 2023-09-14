@@ -1,0 +1,15 @@
+data structures:
+graph
+stacks and queues
+binary trees(uses recursion)
+hashmaps
+heaps
+
+
+algorithms:
+bfs and dfs(djikstra and topological sort)
+dynamic programming(combination sum)
+backtracking(combination sum, permutations, sudoku solver,word ladder)
+binary search
+sliding window
+top k frequent elements (use heap/priority queue)
