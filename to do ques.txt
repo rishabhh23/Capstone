@@ -1,2 +1,7 @@
 race car
 cheery pickup
+happy students
+beautiful towers 2
+
+topics for contests:
+nearest greater/smaller element using stacks
