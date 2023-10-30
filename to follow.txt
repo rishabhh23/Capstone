@@ -1,4 +1,4 @@
 neetcode 
 striver dsa sheet
-interview patterns riddhi dutta
-cses
+usaco guide 
+grokking - math
