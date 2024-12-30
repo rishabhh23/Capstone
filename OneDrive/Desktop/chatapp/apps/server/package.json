@@ -1,0 +1,9 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.7.2"
+  }
+}
