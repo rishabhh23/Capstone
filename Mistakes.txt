@@ -1,3 +1,0 @@
-variable sliding window:
-increase the right pointer firstly till it is equal
-to the given window size 'k' as right-left+1<k
