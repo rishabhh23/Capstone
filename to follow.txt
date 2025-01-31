@@ -1,4 +1,0 @@
-neetcode 
-striver dsa sheet
-usaco guide 
-grokking - math
