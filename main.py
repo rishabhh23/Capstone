@@ -11,6 +11,7 @@ from datetime import datetime
 from api.apiCalls import check_ip_reputation, check_ip_quality
 from api.passwordManager import password_manager
 from api.vulnScanner import vuln_scanner
+from api.emailPhishing import phishing_tab
 
 # Page configuration
 st.set_page_config(page_title="GridSec : Cybersecurity Dashboard", layout="wide", page_icon="🛡️")
@@ -91,13 +92,14 @@ with col4:
     st.metric("Avg Response Time", f"{avg_response:.1f} mins")
 
 # Main tabs
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
         "📊 Overview", 
         "📈 Trends", 
         "🌐 Geo", 
         "🛡️ Threat Intel",
         "🔑 Password Manager",
-        "🕷️ Vuln Scanner"
+        "🕷️ Vuln Scanner",
+        "🛡️ Email Phising Analyzer",
     ])
 
 with tab1:
@@ -299,6 +301,9 @@ with tab5:
 
 with tab6:
     vuln_scanner()
+
+with tab7:
+    phishing_tab()
 
 # Display data table with expander
 with st.expander("📋 View Filtered Incident Data", expanded=False):
