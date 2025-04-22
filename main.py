@@ -260,4 +260,4 @@ st.sidebar.download_button(
 # Add a footer
 st.sidebar.markdown("---")
 st.sidebar.markdown("🔒 Final Year Project - Cybersecurity Dashboard")
-st.sidebar.markdown("⚠️ Note: This dashboard uses simulated data for demonstration purposes")
+st.sidebar.markdown(" © Made by Rishabh Sharma, 2025")
