@@ -1,13 +1,18 @@
 import requests
 import json
 from datetime import datetime
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
+import streamlit as st
 import os
 
-load_dotenv() 
+# load_dotenv() 
 
-VIRUSTOTAL_API_KEY = os.getenv('VT_API_KEY')
-IPQUALITYSCORE_API_KEY = os.getenv('IPQS_API_KEY')
+# VIRUSTOTAL_API_KEY = os.getenv('VT_API_KEY')
+# IPQUALITYSCORE_API_KEY = os.getenv('IPQS_API_KEY')
+
+VIRUSTOTAL_API_KEY     = st.secrets["VT_API_KEY"]
+IPQUALITYSCORE_API_KEY = st.secrets["IPQS_API_KEY"]
+
 
 # mock API calls
 # def check_ip_reputation(ip_address):
