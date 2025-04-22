@@ -201,69 +201,9 @@ with tab3:
     top_ips.columns = ['IP Address', 'Count']
     st.dataframe(top_ips)
 
-# SIMULATED DATA.
-# with tab4:
-#     st.subheader("Threat Intelligence")
-    
-#     if lookup_value:
-#         st.info(f"Looking up {lookup_type}: {lookup_value}")
-        
-#         # Simulated API responses (in a real app, you'd call actual APIs)
-#         if lookup_type == "IP Address":
-#             # Simulated VirusTotal API response
-#             st.markdown("#### IP Reputation Analysis")
-#             col1, col2, col3 = st.columns(3)
-#             with col1:
-#                 st.metric("Malicious Score", "8/10", "-2 from last week")
-#             with col2:
-#                 st.metric("Associated Threats", "3", "Phishing, Malware")
-#             with col3:
-#                 st.metric("Country", "Russia", "")
-            
-#             st.markdown("#### Historical Activity")
-#             activity_data = pd.DataFrame({
-#                 'Date': pd.date_range('2024-01-01', periods=30),
-#                 'Activity': np.random.randint(1, 100, 30)
-#             })
-#             fig = px.line(activity_data, x='Date', y='Activity', 
-#                           title="Historical Activity from this IP")
-#             st.plotly_chart(fig, use_container_width=True)
-            
-#         elif lookup_type == "Domain":
-#             st.markdown("#### Domain Analysis")
-#             col1, col2, col3 = st.columns(3)
-#             with col1:
-#                 st.metric("Risk Score", "High", "75/100")
-#             with col2:
-#                 st.metric("Creation Date", "2023-05-12", "1 year old")
-#             with col3:
-#                 st.metric("SSL Valid", "No", "Potential risk")
-            
-#         elif lookup_type == "File Hash":
-#             st.markdown("#### File Hash Analysis")
-#             col1, col2, col3 = st.columns(3)
-#             with col1:
-#                 st.metric("Detection Rate", "45/70", "64% malicious")
-#             with col2:
-#                 st.metric("File Type", "Executable", "PE32")
-#             with col3:
-#                 st.metric("First Seen", "2024-02-15", "1 month ago")
-            
-#             st.markdown("#### Associated Threats")
-#             threats = pd.DataFrame({
-#                 'Vendor': ['Microsoft', 'Kaspersky', 'McAfee', 'Symantec'],
-#                 'Detection': ['Trojan:Win32/Wacatac', 'HEUR:Trojan.Win32.Generic', 
-#                              'Artemis!Trojan', 'Trojan.Gen.2'],
-#                 'Severity': ['High', 'High', 'Medium', 'High']
-#             })
-#             st.dataframe(threats)
-#     else:
-#         st.warning("Enter a value in the sidebar to perform threat intelligence lookup")
-
 # REAL DATA FETCHING
 with tab4:
     st.subheader("Threat Intelligence")
-    
     if lookup_value:
         st.info(f"Looking up {lookup_type}: {lookup_value}")
         
